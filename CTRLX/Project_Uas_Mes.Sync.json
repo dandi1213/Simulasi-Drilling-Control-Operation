@@ -1,0 +1,52 @@
+{
+  "IsSynced": true,
+  "SyncMode": 1,
+  "InSyncWithRuntime": true,
+  "ApplicationType": "plc",
+  "Configuration": "appdata",
+  "Solution": "DefaultSolution",
+  "ControllerGuid": "2a55d888-1012-480f-9c70-d0a8f3b4c414",
+  "LastChange": 638653861985582561,
+  "MachineName": "DESKTOP-MBGI9OU",
+  "UserName": "poiuy",
+  "ProjectCompleteFilename": "G:\\POLMAN\\SEMESTER 5\\TEORI\\MES\\PROJECT UAS\\CTRLX\\Project_Uas_Mes.project",
+  "CompilerVersion": {
+    "Major": 3,
+    "Minor": 5,
+    "Build": 19,
+    "Revision": 10,
+    "MajorRevision": 0,
+    "MinorRevision": 10
+  },
+  "OwnVersion": {
+    "Major": 1,
+    "Minor": 2,
+    "Build": 0,
+    "Revision": 0,
+    "MajorRevision": 0,
+    "MinorRevision": 0
+  },
+  "ProductAdditionalFolder": "Default",
+  "ProductProfileName": "ctrlX PLC 1.20.1",
+  "ProductId": "ctrlx-works",
+  "ProductVersion": "1.20.2",
+  "ProductVersionText": "WRK-V-0120.2",
+  "SyncModeSave": true,
+  "SyncModeDownload": false,
+  "SyncModeAsk": false,
+  "SyncAfterBootApplication": false,
+  "UserMetaData": {
+    "DESKTOP-MBGI9OU:poiuy": {
+      "MachineName": "DESKTOP-MBGI9OU",
+      "UserName": "poiuy",
+      "ProjectCompleteFilename": "G:\\POLMAN\\SEMESTER 5\\TEORI\\MES\\PROJECT UAS\\CTRLX\\Project_Uas_Mes.project"
+    }
+  },
+  "CompileinfoChecksum": {
+    "f88598bb-1511-40eb-a781-24f4fd185163": 2266676652
+  },
+  "SyncDescription": false,
+  "DeviceId": "1001 0081",
+  "DeviceVersion": "1.20.10.0",
+  "UseIoHierachy": true
+}
