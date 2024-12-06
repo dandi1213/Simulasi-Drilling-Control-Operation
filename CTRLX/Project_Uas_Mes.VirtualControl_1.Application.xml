@@ -6,14 +6,6 @@
     <ProjectInfo name="Project_Uas_Mes" devicename="VirtualControl_1" appname="Application" />
   </Header>
   <TypeList>
-    <TypeSimple name="T_BIT_X_0" size="1" swapsize="0" typeclass="Bool" iecname="BIT" bitoffset="0" />
-    <TypeSimple name="T_BIT_X_1" size="1" swapsize="0" typeclass="Bool" iecname="BIT" bitoffset="1" />
-    <TypeSimple name="T_BIT_X_2" size="1" swapsize="0" typeclass="Bool" iecname="BIT" bitoffset="2" />
-    <TypeSimple name="T_BIT_X_3" size="1" swapsize="0" typeclass="Bool" iecname="BIT" bitoffset="3" />
-    <TypeSimple name="T_BIT_X_4" size="1" swapsize="0" typeclass="Bool" iecname="BIT" bitoffset="4" />
-    <TypeSimple name="T_BIT_X_5" size="1" swapsize="0" typeclass="Bool" iecname="BIT" bitoffset="5" />
-    <TypeSimple name="T_BIT_X_6" size="1" swapsize="0" typeclass="Bool" iecname="BIT" bitoffset="6" />
-    <TypeSimple name="T_BIT_X_7" size="1" swapsize="0" typeclass="Bool" iecname="BIT" bitoffset="7" />
     <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
     <TypeSimple name="T_TIME" size="4" swapsize="4" typeclass="Time" iecname="TIME" />
     <TypeUserDef name="T_TON" size="32" nativesize="32" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="TON">
@@ -26,28 +18,58 @@
   <NodeList>
     <Node name="Application">
       <Node name="Project_Uas_Mes">
-        <Node name="AUTO_INDICATOR" type="T_BIT_X_0" access="ReadWrite" directaddress="%QX10.0" />
-        <Node name="AUTO_START_BUTTON" type="T_BIT_X_7" access="Read" directaddress="%IX0.7" />
-        <Node name="AUTO_START_INDICATOR" type="T_BIT_X_4" access="ReadWrite" directaddress="%QX10.4" />
-        <Node name="AUTO_SWITCH" type="T_BIT_X_0" access="Read" directaddress="%IX0.0" />
+        <Node name="AUTO_START_BUTTON" type="T_BOOL" access="ReadWrite" />
+        <Node name="AUTO_START_BUTTON_INDICATOR" type="T_BOOL" access="ReadWrite" />
+        <Node name="AUTO_SWITCH" type="T_BOOL" access="ReadWrite" />
+        <Node name="AUTO_SWITCH_INDICATOR" type="T_BOOL" access="ReadWrite" />
         <Node name="Elapsed_Time" type="T_TIME" access="ReadWrite" />
-        <Node name="K1" type="T_BIT_X_0" access="ReadWrite" directaddress="%MX100.0" />
-        <Node name="K2" type="T_BIT_X_2" access="ReadWrite" directaddress="%MX100.2" />
-        <Node name="K3" type="T_BIT_X_3" access="ReadWrite" directaddress="%MX100.3" />
-        <Node name="K4" type="T_BIT_X_4" access="ReadWrite" directaddress="%MX100.4" />
-        <Node name="K5" type="T_BIT_X_5" access="ReadWrite" directaddress="%MX100.5" />
-        <Node name="K6" type="T_BIT_X_6" access="ReadWrite" directaddress="%MX100.6" />
-        <Node name="K7" type="T_BIT_X_7" access="ReadWrite" directaddress="%MX100.7" />
-        <Node name="LS1" type="T_BIT_X_5" access="Read" directaddress="%IX0.5" />
-        <Node name="LS2" type="T_BIT_X_6" access="Read" directaddress="%IX0.6" />
-        <Node name="MANUAL" type="T_BIT_X_1" access="Read" directaddress="%IX0.1" />
-        <Node name="MANUAL_INDICATOR" type="T_BIT_X_1" access="ReadWrite" directaddress="%QX10.1" />
-        <Node name="MOTOR_FORWARD" type="T_BIT_X_2" access="ReadWrite" directaddress="%QX10.2" />
-        <Node name="MOTOR_REVERES" type="T_BIT_X_3" access="ReadWrite" directaddress="%QX10.3" />
-        <Node name="SW1" type="T_BIT_X_2" access="Read" directaddress="%IX0.2" />
-        <Node name="SW2" type="T_BIT_X_3" access="Read" directaddress="%IX0.3" />
-        <Node name="SW3" type="T_BIT_X_4" access="Read" directaddress="%IX0.4" />
+        <Node name="K1" type="T_BOOL" access="ReadWrite" />
+        <Node name="K2" type="T_BOOL" access="ReadWrite" />
+        <Node name="K3" type="T_BOOL" access="ReadWrite" />
+        <Node name="K4" type="T_BOOL" access="ReadWrite" />
+        <Node name="K5" type="T_BOOL" access="ReadWrite" />
+        <Node name="K6" type="T_BOOL" access="ReadWrite" />
+        <Node name="K7" type="T_BOOL" access="ReadWrite" />
+        <Node name="K8" type="T_BOOL" access="ReadWrite" />
+        <Node name="LS1" type="T_BOOL" access="ReadWrite" />
+        <Node name="LS2" type="T_BOOL" access="ReadWrite" />
+        <Node name="MANUAL" type="T_BOOL" access="ReadWrite" />
+        <Node name="MANUAL_INDICATOR" type="T_BOOL" access="ReadWrite" />
+        <Node name="MOTOR_FORWARD" type="T_BOOL" access="ReadWrite" />
+        <Node name="MOTOR_REVERSE" type="T_BOOL" access="ReadWrite" />
+        <Node name="SW1" type="T_BOOL" access="ReadWrite" />
+        <Node name="SW2" type="T_BOOL" access="ReadWrite" />
+        <Node name="SW3" type="T_BOOL" access="ReadWrite" />
         <Node name="TIMER_1" type="T_TON" access="ReadWrite" />
+      </Node>
+      <Node name="V1_Project_Uas_Mes">
+        <Node name="AUTO_START_BUTTON" type="T_BOOL" access="ReadWrite" />
+        <Node name="AUTO_START_BUTTON_INDICATOR" type="T_BOOL" access="ReadWrite" />
+        <Node name="AUTO_SWITCH" type="T_BOOL" access="ReadWrite" />
+        <Node name="AUTO_SWITCH_INDICATOR" type="T_BOOL" access="ReadWrite" />
+        <Node name="COIL" type="T_BOOL" access="ReadWrite" />
+        <Node name="Elapsed_Time" type="T_TIME" access="ReadWrite" />
+        <Node name="K1" type="T_BOOL" access="ReadWrite" />
+        <Node name="K2" type="T_BOOL" access="ReadWrite" />
+        <Node name="K3" type="T_BOOL" access="ReadWrite" />
+        <Node name="K4" type="T_BOOL" access="ReadWrite" />
+        <Node name="K5" type="T_BOOL" access="ReadWrite" />
+        <Node name="K6" type="T_BOOL" access="ReadWrite" />
+        <Node name="K7" type="T_BOOL" access="ReadWrite" />
+        <Node name="K8" type="T_BOOL" access="ReadWrite" />
+        <Node name="K9" type="T_BOOL" access="ReadWrite" />
+        <Node name="LS1" type="T_BOOL" access="ReadWrite" />
+        <Node name="LS2" type="T_BOOL" access="ReadWrite" />
+        <Node name="MANUAL" type="T_BOOL" access="ReadWrite" />
+        <Node name="MANUAL_INDICATOR" type="T_BOOL" access="ReadWrite" />
+        <Node name="MOTOR_FORWARD" type="T_BOOL" access="ReadWrite" />
+        <Node name="MOTOR_REVERSE" type="T_BOOL" access="ReadWrite" />
+        <Node name="START" type="T_BOOL" access="ReadWrite" />
+        <Node name="STOP" type="T_BOOL" access="ReadWrite" />
+        <Node name="SW1" type="T_BOOL" access="ReadWrite" />
+        <Node name="SW2" type="T_BOOL" access="ReadWrite" />
+        <Node name="SW3" type="T_BOOL" access="ReadWrite" />
+        <Node name="TIMER" type="T_TON" access="ReadWrite" />
       </Node>
     </Node>
   </NodeList>

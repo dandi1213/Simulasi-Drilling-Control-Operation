@@ -93,7 +93,7 @@
                       "Id": null,
                       "ModuleId": null,
                       "Version": null,
-                      "ObjectGuid": "87c04baf-c65f-44d8-8a7c-254b09e3e5fa",
+                      "ObjectGuid": "4c8f6020-755c-4bee-9bdc-6b56724717b5",
                       "SlotIndex": 0,
                       "StructuralItems": []
                     },
@@ -106,7 +106,20 @@
                       "Id": null,
                       "ModuleId": null,
                       "Version": null,
-                      "ObjectGuid": "d23e93e4-ad38-402f-9c42-74310c932f5d",
+                      "ObjectGuid": "d1766ab8-f257-488a-bc59-914523b9636c",
+                      "SlotIndex": 0,
+                      "StructuralItems": []
+                    },
+                    {
+                      "Name": "V1_Project_Uas_Mes",
+                      "IconName": null,
+                      "EcadId": null,
+                      "TypeName": "_3S.CoDeSys.TaskObject.TaskPOUCallObject",
+                      "Type": 0,
+                      "Id": null,
+                      "ModuleId": null,
+                      "Version": null,
+                      "ObjectGuid": "5c348bd8-7344-4c46-9501-95920d130efc",
                       "SlotIndex": 0,
                       "StructuralItems": []
                     }
@@ -272,15 +285,15 @@
               ]
             },
             {
-              "Name": "Project_Uas_Mes",
+              "Name": "Visualization Manager",
               "IconName": null,
               "EcadId": null,
-              "TypeName": "_3S.CoDeSys.POUObject.POUObject",
+              "TypeName": "_3S.CoDeSys.VisualObject.VisualManagerObject",
               "Type": 0,
               "Id": null,
               "ModuleId": null,
               "Version": null,
-              "ObjectGuid": "26fef1d3-0beb-470a-8849-7e8ed96719ec",
+              "ObjectGuid": "0782088d-84f9-470e-95bb-3a605f35ef1e",
               "SlotIndex": 0,
               "StructuralItems": []
             },
@@ -298,15 +311,28 @@
               "StructuralItems": []
             },
             {
-              "Name": "Visualization Manager",
+              "Name": "V1_Project_Uas_Mes",
               "IconName": null,
               "EcadId": null,
-              "TypeName": "_3S.CoDeSys.VisualObject.VisualManagerObject",
+              "TypeName": "_3S.CoDeSys.POUObject.POUObject",
               "Type": 0,
               "Id": null,
               "ModuleId": null,
               "Version": null,
-              "ObjectGuid": "0782088d-84f9-470e-95bb-3a605f35ef1e",
+              "ObjectGuid": "46651417-64c3-41d1-aba6-dc955ef371d0",
+              "SlotIndex": 0,
+              "StructuralItems": []
+            },
+            {
+              "Name": "Project_Uas_Mes",
+              "IconName": null,
+              "EcadId": null,
+              "TypeName": "_3S.CoDeSys.POUObject.POUObject",
+              "Type": 0,
+              "Id": null,
+              "ModuleId": null,
+              "Version": null,
+              "ObjectGuid": "ec33886c-d425-46d1-b9bc-9462315c23b8",
               "SlotIndex": 0,
               "StructuralItems": []
             }

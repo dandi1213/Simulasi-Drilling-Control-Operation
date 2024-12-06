@@ -195,7 +195,7 @@ BEGIN
  BEGIN
   View[0]:=
   BEGIN
-   Yscroll:=18;
+   Yscroll:=6;
   END;
   nViews:=1;
  END;
